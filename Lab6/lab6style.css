@@ -1,0 +1,92 @@
+h1.title{
+    text-align: center;
+    color: red;
+    padding: 2em;
+    border-bottom: dashed grey 2px;
+}
+.box1, .box2, .box3{
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    padding: 2em;
+    border: solid 1px red;
+    margin: 3em auto;
+}
+.box1{
+    box-shadow: -10px 10px 15px blue;
+    border-radius: 10px;
+}
+.box2{
+    box-shadow: -10px 10px 15px orange inset;
+    border-radius: 50%;
+}
+.box3{
+    box-shadow: 0px 0px 15px 5 px purple;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.header {
+    background-color: aliceblue;
+    width: 1000px;
+    margin: auto;
+    padding: 1em;
+    text-align: center;    
+}
+.navlinks{
+    padding: 1em;
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    color: aliceblue;
+    background-color: darkblue;
+}
+.maincontainer{
+    width: 1000px;
+    height: 500px;
+    margin: 2em auto;
+    box-shadow: 5px 5px 10px grey;
+
+}
+.leftblock{
+    width: 700px;
+    height: 300px;
+    border: solid grey 1px;
+    float: left;
+}
+.rightblock{
+    width: 296px ;
+    height: 300px;
+    border: 1px solid black;
+    float: right;
+
+}
+.infosection{
+    height: 150px;
+    background-color: chartreuse;
+}
+.newsarticle{
+    height: 150px;
+    background-color: deepskyblue;
+}
+.images{
+    height: 200px;
+    background-color: crimson;
+    float: left;
+    width: 100%;
+}
+.footer{
+    width: 1000px;
+    margin: auto;
+    height: 100px;
+    background-color: rgb(187, 185, 185);
+}
+.liquidheader, .liquidnav, .liquidcontainer, .liquidfooter {
+    width: 80%;
+}
+.liquidleftblock{
+    width: 70%;
+}
+.liquidrightblock{
+    width: 29%;
+}
