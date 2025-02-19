@@ -90,3 +90,86 @@ h1.title{
 .liquidrightblock{
     width: 29%;
 }
+/* CARDS */
+.cardcontainer{
+    width: 90%;
+    margin: 2em auto;
+    height: 750px;
+    border: solid red 1px;
+}
+.card{
+    width: 40%;
+    height: auto;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 12px;
+    margin: 0% 5%; 
+    overflow: hidden;
+    float: left;
+}
+img{width: 100%; display: block;}
+.card img{
+    height: 80%;
+}
+.card h3{
+    text-align: center;
+}
+.card h3 a{
+    color: olive;
+}
+.card:hover{
+    box-shadow: 0px 0px 5px 1px black;
+    cursor: pointer;
+}
+.card:hover .cardlink{
+    color: crimson;
+    font-size: 1.3em;
+}
+.cardinfo{
+    padding: 1.5em;
+    font-size: 1.2em;
+    text-align: justify;
+}
+.cardfooterlink{
+    text-align: center;
+    display: block;
+    background-color: black;
+    color: whitesmoke;
+    padding: 0.5em;
+}
+.card:hover .cardfooterlink{
+    background-color: crimson;
+    font-size: 1.1em;
+}
+/* NAVIGATION TABS */
+.verticaltabs{
+    list-style: none;
+}
+.verticaltabs li a{
+   display: block;
+   background-color: blueviolet; 
+   width: 30%;
+   color: white;
+   padding: 1em;
+   text-decoration: none;
+}
+.verticaltabs li :hover{
+    background-color: aqua;
+    color: darkmagenta;
+}
+.horizontaltabs{
+    background-color: blueviolet;
+    color: whitesmoke;
+}
+.horizontaltabs a{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    color: whitesmoke;
+    padding: 1em;
+    text-decoration: none;
+}
+.horizontaltabs a:hover{
+    background-color: aqua;
+    color: darkblue;
+
+}
