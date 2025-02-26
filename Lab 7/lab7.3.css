@@ -1,0 +1,95 @@
+header{
+    text-align: center;
+    box-shadow: 0px 0px 15px 10px rgb(12, 198, 231);
+    margin: 0% 2%;
+    padding: 20px;
+    overflow: hidden;
+}
+.title{
+    padding: 1em;
+    font-family: cursive;
+    font-size: 2em;
+    color: blue;
+    text-align: center;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.navlinks{
+    background-color: blue;
+    margin: 0% 2%;
+}
+.navlinks a{
+    width: 30%;
+    color: rgb(55, 144, 239);
+    padding: 1em;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+.navlinks a:hover{
+    background-color: blue;
+    color: rgb(30, 107, 230);
+}
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    margin: 2em;
+}
+.intro{
+    display: flex;
+    float: right;
+    text-align: center;
+}
+.intro img{
+    width: 45%;
+    height: 100%;
+    float: left;
+    border-radius: 5px;
+}
+.intro p{
+    font-size: 1.3em;
+    color: blue;
+    text-align: justify;
+    padding: 5%;
+    float: right;
+}
+#bluejay1, #bluejay2{
+    width: 90%;
+    height: 600px;
+    margin: 2em auto;
+}
+#bluejay1 .card, #bluejay2 .card{
+    width: 30%;
+    height: auto;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 12px;
+    margin: 15px;
+    overflow: hidden;
+    float: left;
+}
+img{width: 100%; display: block;}
+.card img{
+    height: 80%;
+}
+#bluejay1 h2 ,#bluejay2 h2{
+    color: blue;
+}
+.card h3{
+    color: blue;
+    text-align: center;
+}
+.card p{
+    text-align: justify;
+    margin: 1em;
+}
+#hercontainer .card:hover, #himcontainer .card:hover{
+    box-shadow: 0px 0px 10px 5px blue;
+    color: rgb(51, 108, 252);
+}
