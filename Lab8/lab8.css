@@ -1,0 +1,273 @@
+.colorcontainer{
+    border: solid gray;
+    height: 205px;
+    ;
+}
+.rbg1, .rgb2, .rgb3, .rgb4 {
+    width: 200px;
+    height: 200px;
+    border: ridge black 3px;
+    float: left;
+    margin-right: 10px;
+}
+.rgb1{
+    background-color: rgb(242, 80, 30);
+}
+.rgb2{
+    background-color: rgb(127, 186, 0);
+}
+.rgb3{
+    background-color: rgb(1, 164, 239);
+}
+.rgb4{
+    background-color: rgb(255, 185, 1);
+}
+/* Hex colors */
+.hex1, .hex2, .hex3 {
+    width: 200px;
+    height: 200px;
+    border: ridge black 3px;
+    float: left;
+    margin-right: 10px;
+}
+.hex1{
+    background-color: #ad1457;
+}
+.hex2{
+    background-color: #78002e;
+}
+.hex3{
+    background-color: #10ab88;
+}
+
+/* position */
+img{width: 100%; display: block;}
+.imgcontainer{
+    width: 60%;
+    margin: 1em auto;
+    position: relative;
+    box-shadow: 1px 1px 5px gray;
+}
+.imgtitle{
+    position: absolute;
+    top: 40%;
+    bottom: 40;
+    left: 20%;
+    right: 20%;
+    background-color: rgb(242,80,30,0.6);
+    text-align: center;
+    font-size: 2em;
+    padding: 1em;
+}
+/* fixed navigation*/
+.topnav{
+    background-color: #78002e;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+}
+.topnav a{
+    display: inline-block;
+    padding: 1em 3em;
+    color: whitesmoke;
+    text-decoration: none;
+    margin-left: auto;
+}
+.topnav a:hover {
+    background-color: aliceblue;
+    color: #a70241;
+}
+
+/* Linear gradient*/
+.mesh1, .mesh2, .mesh3{
+    width: 60%;
+    height: 200px;
+}
+.mesh1{
+    background-image: linear-gradient(#78002e, #10ab88);
+}
+.mesh2{
+    background-image: linear-gradient(to right, red, blue);
+}
+.mesh3{
+    background-image: linear-gradient(to top left, red, blue);
+}
+/* hero image*/
+.heroinfo{
+    position: absolute;
+    top: 30%;
+    bottom: 30%;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+    border: solid 1px gray;
+}
+.heroimage {
+    background-image: linear-gradient(to right, rgba(255,255,255, 0.6), rgba(255,0,0,0.7)) , url('images/White\ bird.jpg'); 
+    background-size: 100% 100%;
+    height: 400px;
+    width: 700px;
+}
+.heroinfo a{
+    display: inline-block;
+    padding: 0.5em 2em;
+    background-color: #78002e;
+    color: whitesmoke;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.heroinfo a:hover{
+    background-color: red;
+}
+/* sepia filter */
+
+.sepia{
+    filter: sepia(10%)
+}
+.sepia2{
+    filter: sepia(60%);
+}
+.sepia3{
+    filter: sepia(100%);
+}
+/* blur filter */
+
+.blur1{
+    filter: blur(2px);
+}
+.blur2 {
+    filter: blur(10px);
+}
+.blur3 {
+    filter: blur(20px);
+}
+
+/* invert filter */
+.invert1{
+    filter: invert(2%);
+}
+.invert2 {
+    filter: invert(60%);
+}
+.invert3 {
+    filter: invert(100%);
+}
+
+/* Excercise */
+
+.sectioncontainer {
+    height: auto;
+    width: auto;
+    border: solid red 1px;
+    position: relative;
+}
+.container1, .container2, .container3 {
+    width: 400px;
+    height: 600px;
+    border: solid blue 1px;
+    display: inline-block;
+    margin: 2.5em;
+    position: relative;
+}
+.container1 img {
+   filter: invert(100%);
+}
+
+.imginfo{
+    position: absolute;
+    bottom: 3%;
+    left: 20%;
+    right: 20%;
+    background-color: rgb(242,80,30,0.8);
+    text-align: center;
+    font-size: 2em;
+    padding: 1em;
+    border: solid;
+    
+}
+/* Blur Effect */
+
+.imginfo2 {
+    position: absolute;
+    top: 35%; 
+    bottom: 35%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+    font-size: 2em;
+    padding: 1em;
+    border: solid;
+    background-color: rgba(13, 194, 106, 0.5);
+    box-shadow: 5px 5px 10px rgba(255, 153, 0, 0.637)
+}
+.imginfo2 a {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+    background-color: aqua;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    float: left;
+    
+}
+.imginfo2 a:hover {
+    background-color: aliceblue;
+}
+.imginfo2 h3 {
+    font-size:medium;
+    text-align: left;
+    bottom: 1%;
+    top: 1%;
+    color: #78002e;
+}
+.imginfo2 p {
+    font-size: medium;
+    text-align: left;
+}
+
+/* Linear Gradient */
+.container3 {
+background-image: linear-gradient(to right, rgba(255, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("images/Parrot.jpg");
+position: relative;
+background-size: 100% 100%;
+width: 400px;
+height: 600px;
+}
+.imginfo3 {
+   position: absolute;
+}
+.title {
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    font-size: 3em;
+    color: cyan;
+}
+.info1 {
+position: absolute;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 20px;
+margin: 0;
+}
+
+.info2 {
+    position: absolute;
+    color: white;
+    right: 200px;
+    top: 10px;
+}
+
+.info3 {
+    position: absolute;
+    top: 170px;
+    top: 110px;
+    left: 100px;
+    color: white;
+}
+ .info1, .info2, .info3 {
+    font-family: cursive;
+}
