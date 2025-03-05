@@ -1,0 +1,131 @@
+*{box-sizing: border-box;}
+/* CARDS */
+.maincontainer {
+    border: solid gray 1px;
+    width: 90%;
+    height: 500px;
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.card {
+    border-radius: 10px;
+    border: solid lightgray 1px;
+    width: 300px;
+    background-color: aquamarine;
+    padding: 1%;
+}
+/* NAV LINKS */
+
+.navlinks {
+    width: 60%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.link {
+    display: inline-block;
+    padding: 1em 3em;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.link:hover {
+    background-color: aliceblue;
+    color: red;
+}
+/* COLLAPSE MENU */
+.collapsemenu{
+    background-color: orangered;
+    color: aliceblue;
+    font-size: 1.5em;
+    display: none;
+}
+/* HEADER */
+.header{
+    width: 90%;
+    margin: 2em auto;
+    display: flex;
+    background-color: orangered;
+    align-items: center;
+}
+.headertitle {
+    text-align: center;
+    color: whitesmoke;
+    width: 40%;
+    font-size: 2em;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+}
+.footercustomer, .footermyaccount, .footerfollow{
+    width: 30%;
+    padding: 2em;
+}
+.footertitle{
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+.footerlist{
+    list-style: none;
+    
+}
+.footerlist li{
+    padding: 0.5em 0em;
+    margin-left: -40px;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.socialmedia{
+    display: flex;
+    justify-content: right;
+}
+.socialmedia a{
+    display: inline-block;
+    width: 30%;
+    margin-right: 5%;
+}
+/* Medium Screen Size */
+/* Large Size =1400px */
+@media only screen and (max-width: 1350px){
+    .card {width: 40%;}
+    .cardtitle{text-align: center;}
+    .link {
+        padding: 1em 2em;
+        font-size: 1.1em;
+    }
+    .headertitle {
+        font-size: 2.5em;
+    }
+}
+/* Medium Screen= 800px for a tablet size screen */
+@media only screen and (max-width: 800px){
+    .maincontainer {height: auto;}
+    .card {width: 90%; margin-bottom: 2em ;}
+    .card:nth-child(1){margin-top: 2em;}
+    .headertitle {width: 90%; padding: 1em; font-size: 3em; border-bottom: solid 1px white; }
+    .header{flex-wrap: wrap;}
+    .navlinks{width: 100%; justify-content: center; border-top: solid white 1px; }
+    .footer{flex-wrap: wrap;}
+    .footercustomer, .footermyaccount, .footerfollow {
+        width: 50%;
+    }
+}
+/* small size = 500px*/
+@media only screen and (max-width: 500px){
+    .navlinks{display: none;}
+    .collapsemenu{display: block; margin-left: auto; padding: 0em 1em;}
+    .footercustomer, .footermyaccount, .footerfollow {
+        width: 100%;
+    }
+    .cardtitle {font-size: 1.2em; overflow: hidden;}
+}
