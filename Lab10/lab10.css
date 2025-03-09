@@ -1,0 +1,111 @@
+
+.header {
+    background-color:aqua;
+}
+.headertitle {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 2em;
+    background-color: aquamarine;
+    padding: 0.5em;
+    
+}
+.imagetext{
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("images/pexels-nathanjhilton-31002131.jpg");
+    background-size: 100% 100%;
+    border: solid;
+}
+.navlinks {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.link {
+    display: inline-block;
+    color: blue;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 0em 2em;
+}
+.link:hover {
+    background-color: aliceblue;
+    color: red;
+}
+.maincontainer{
+    width: 70%;
+    margin: 2em auto;
+    height: 750px;
+    border: solid red 1px;
+}
+.mainimg {
+    position: relative;
+}
+ .mainimg img {
+    width: 100%;
+    height: 300px;
+    filter: blur(2px);
+ }
+/* Image */
+
+.imagetext p {
+    position: absolute;
+    font-size: 80px;
+}
+/* Right column*/
+.rightcolumn{
+    width: 20%;
+}
+.columncard {
+    border-radius: 12px;
+    border: solid gray 1px;
+    padding: 1em;
+    box-shadow: 0px 0px 5px 1px gray;
+    margin: 1em 0em;
+    background-color: white;
+}
+
+ .maincontainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.card {
+    border-radius: 12px;
+    border: solid gray 1px;
+    width: 25%;
+    background-color: white;
+    overflow: hidden;
+    margin: 2.5em 0em;
+    background-color: whitesmoke;
+}
+.card img {
+    width: 100%;
+    height: 150px;
+}
+.cardsection {
+    width: 70%;
+    border: solid gray 1px;
+    margin: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px 1px gray;
+    background-color: white;
+}
+.announcement h3 {
+    color: #333;
+}
+
+.announcement ul {
+    padding-left: 20px;
+}
+.announcement ul li {
+    margin: 5px 0;
+}
