@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+.cmainimg {
+    margin-right: 2%;
+}
+.cmainimg, .cmainimg2 {
+    width: 29%;
+}
+figure {
+    margin: 2% 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+img {
+    overflow: clip;
+}

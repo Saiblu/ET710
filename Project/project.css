@@ -1,21 +1,9 @@
-.header {
-    color: crimson;
-    background-color: rgb(0, 0, 0);
-    text-align: center;
+*{
+    box-sizing: border-box;
 }
-.titletext {
-    display: inline-block;
-    vertical-align: middle;
-    overflow: hidden;
-}
-.title {
-    font-size: 2em;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+body {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-}
-.subtitle {
-    font-size: 1em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .maincontainer {
     position: relative;
@@ -25,6 +13,7 @@
     width: 100%;
     height: 650px;
     filter: sepia(40%);
+    position: relative;
 }
 .textimg {
     font-size: 250%;
@@ -36,30 +25,98 @@
     transform: translate(-50%, -50%);
     overflow: hidden;
 }
-.mainhr {
-    margin-bottom: 0;
-    height: 5px;
-    color: white;
-    background-color: white;
+/* maincontent */
+.maincontent {
+    margin: 0;
+    text-align: center;
+}
+.textsection, .imgsect {
+    display: inline-block;
+    width: 48%;
+    vertical-align: middle;
+    margin: 0;
+}
+.sectionbuttonlink :hover{
+    background-color: grey;
+    color: red;
+}
 
+.intro img {
+    width: 45%;
+    height: 100%;
+    float: right;
+    border-radius: 5px;
 }
-.internallinks {
-    position: absolute;
-    width: 100%;
-    top: 80%;
+.img p {
+    font-size: 1.3em;
+    color: black;
+    text-align: justify;
+    padding: 5%;
+    float: right;
+    display: block;
 }
-.internallinks a {
+.img {
+    display: block;
+}
+.container {
+    width: 90%;
+    overflow: hidden;
+    margin: 2em;
+}
+.sectionbuttonlink {
     text-decoration: none;
 }
-.tokyolink {
-    margin-right: 2%;
-}
-.tokyolink, .japanlink {
-    background-color: crimson;
+.sectionbutton {
+    background: crimson;
     color: white;
-    padding: 1em 2em;
+    padding: 1em;
     text-align: center;
-    border-radius: 20px;
-    display: inline;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10%;
 }
+.textsection{
+    padding: 8%;
+    padding-left: 8%;
+    text-align: center;
+}
+section 
+
+/* image section */
+
+
+
+/* navigation bar */
+.topbar {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+.titletext {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.textsect {
+    padding-right: 8%;
+    padding-left: 8%;
+    text-align: center;
+}
+nav {
+    width: 100%;
+    height: 5%;
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+
