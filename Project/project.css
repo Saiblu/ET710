@@ -47,6 +47,12 @@ body {
     float: right;
     border-radius: 5px;
 }
+.osaka img {
+    width: 45%;
+    height: 100%;
+    float: right;
+    border-radius: 5px;
+}
 .img p {
     font-size: 1.3em;
     color: black;
@@ -75,25 +81,36 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 10%;
 }
-.textsection{
+.textsect{
     padding: 8%;
     padding-left: 8%;
     text-align: center;
 }
-section 
+div {
+    display: block;
+}
+
 
 /* image section */
 
+.imgsect, .textsect {
+    display: inline-block;
+    width: 48%;
+    vertical-align: middle;
+    margin: 0;
+}
 
 
 /* navigation bar */
 .topbar {
-    height: 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
+    position: absolute;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    text-align: center;
+    width: 100%;
 }
+
 .titletext {
     display: inline-block;
     vertical-align: middle;
@@ -104,19 +121,91 @@ section
     padding-left: 8%;
     text-align: center;
 }
-nav {
-    width: 100%;
-    height: 5%;
-    background: black;
-    position: fixed;
-    top: 0;
-    left: 0;
+.moreinfo, .textsect {
+   text-align: left;
+    padding: 1em 3em 3em 3em;
+    vertical-align: top;
 }
-nav ul {
-    display: flex;
-    gap: 2rem;
+dl {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
+.enlase1, .enlase2, .enlase3 {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 19%;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+@media only screen and(max-width: 800px) {
+    
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: center;
+}
+.sect1, .sect2 {
+    text-align: left;
+}
+header, footer {
+    color: grey;
+    background-color: black;
+    text-align: center;
+}
+footer {
+    text-align: center;
+    color: grey;
+    margin-top: 10%;
+}
+.ftitle{
+    font-weight: bold;
+    font-size: 1em;
+}
+.sub1, .sub2 {
+    font-size: 0.8em;
+}
+footer div {
+    display: inline-block;
+    width: 30%;
+    padding: 3%;
+    vertical-align: middle;
+}
+.sect2 {
+    padding-left: 8%;
+}
+.fimg {
+    width: 8%;
+    margin-right: 2%;
+    vertical-align: middle;
+}
+.textnum {
+    display: inline-block;
+    margin-left: 1%;
+    margin-top: 3%;
+}
+.ftitle {
+    color: white;
+    margin-left: 23%;
+    margin-bottom: 10%;
+}
+.ftitle2 {
+    color: white;
+    text-decoration:none;
+}
 
 
