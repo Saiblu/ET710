@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 14, carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Elias Muniz</h1>
+    <h2>Carousel of text</h2>
+    <section class="carousel slide bg-warning" data-bs-ride="carousel">
+        <div class="carousel-inner text-center display-5 p-3">
+            <div class="carousel-item active"><p>Toys Flash sale today <span class="text-danger display-4"> 40% off</span></p></div>
+            <div class="carousel-item"><p>Toys Flash sale today <span class="text-danger"> Within US</span></p></div>
+            <div class="carousel-item" ><p>Spring break sale <span class="text-danger"> 20% off</span></p></div>   
+        </div>
+
+    </section>
+
+    <h2>Carousel of images with indicatiors and text</h2>
+    <section class="carousel slice w-50 m-auto" id="imgslide" data-bs-ride="carousel">
+        <main class="carousel-inner" >
+            <div class="carousel-item active"> 
+                <img class="w-100" src="images/pexels-catscoming-674570.jpg" alt="image of cat">
+                <div class="carousel-caption bg-light text-dark p-1 mb-4">
+                    <h5>Cats</h5>
+                    <p>They're great, nothing more.</p>
+                </div>
+            </div>
+            <div class="carousel-item"> 
+                <img class="w-100" src="images/pexels-pixabay-37337.jpg" alt="image of cat">
+                <div class="carousel-caption p-1 mb-4 bg-light text-dark">
+                    <h5>And Another</h5>
+                    <p>Cats are something else I tell you.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item"> 
+                <img class="w-100" src="images/pexels-pixabay-54632.jpg" alt="image of cat">
+                <div class="carousel-caption mb-4 bg-light p-1 text-dark">
+                    <h5>Cats again, yes i said it</h5>
+                    <p>Aren't they an amazing creatures known to man?</p>
+                </div>
+            </div>
+            
+            <!--Two images with captions added to them.-->
+            <div class="carousel-item"> 
+                <img class="w-100" src="images/pexels-chevonrossouw-2558605.jpg" alt="image of cat">
+                <div class="carousel-caption p-1 mb-4 bg-light text-dark">
+                    <h5>Another Cat</h5>
+                    <p>Have you not seen what they can do?</p>
+                </div>
+            </div>
+            <div class="carousel-item"> 
+                <img class="w-100" src="images/pexels-ingewallu-126407.jpg" alt="image of cat">
+                <div class="carousel-caption p-1 mb-4 bg-light text-dark">
+                    <h5>Another Cat</h5>
+                    <p>See what I mean, they are amazining creatures known to man.</p>
+                </div>
+            </div>
+        </main>
+        
+        <!--next and previous button-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#imgslide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#imgslide" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        
+        <!--indicators / bars-->
+        <footer class="carousel-indicators">
+            <button type="button" class="active" data-bs-target="#imgslide" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#imgslide" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#imgslide" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#imgslide" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#imgslide" data-bs-slide-to="4"></button>
+        </footer>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
