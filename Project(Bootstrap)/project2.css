@@ -7,6 +7,24 @@
     --secondarycolor: rgb(72, 253, 20); 
 }
 
+@media (max-width: 1200px) {
+    #bakery .card {
+        width: 30%; /* 3 cards in a row for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    #bakery .card {
+        width: 45%; /* 2 cards in a row for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #bakery .card {
+        width: 100%; /* 1 card per row for very small screens */
+    }
+}
+
 .title{
     background: var(--primarycolor);
     color: var(--primarylight);
@@ -285,14 +303,18 @@ a{
 }
 
 #hero {
-background-image: url(img/pexels-vo-thuy-tien-248787-2536967.jpg);
-height: 90vh;
-width: 100%;
-background-size: cover;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-justify-content: center;
+    background-image: url(img/Screenshot\ 2025-04-27\ 130329.png);
+    background-color: rgb(245,157,88,255); /* Light orange background */
+    height: 90vh;
+    width: 100%;
+    background-size: contain; /* Ensures the entire image fits within the section */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: 95% center; /* Moves the image slightly to the right */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-right: 20px; /* Optional: Adds some padding to the right */
 }
 
 /* Best Places we recommend */
@@ -302,21 +324,22 @@ justify-content: center;
 
 #bakery .bakery-container {
     display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row; /* Aligns cards horizontally */
+    justify-content: space-between; /* Adds space between cards */
+    flex-wrap: wrap; /* Allows wrapping if needed */
+    gap: 15px; /* Adds spacing between cards */
 }
 
 #bakery .card {
-    width: 23%;
+    flex: 1 1 auto;
+    max-width: 28%; /* Adjust as needed */
     min-width: 250px;
+    margin: 0; /* Removes unnecessary vertical margins */
     padding: 10px 12px;
     border: 0;
     border-radius: 25px;
     box-shadow: 20px 20px 30px rgb(8, 60, 0.2);
     background-color: white;
-    margin: 15px 0;
     transition: 0.2s ease-in;
     margin: 15px;
 }
@@ -324,8 +347,10 @@ justify-content: center;
     box-shadow: 20px 20px 30px rgb(0, 0, 0.4);
 }
 #bakery .card img {
-    width: 100%;
-    border-radius: 20px;
+    width: 100%; /* Makes the image take up the full width of the card */
+    height: 200px; /* Ensures consistent height for all images */
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+    border-radius: 15px; /* Optional: Adds rounded corners to match the card */
 }
 #bakery .card .des {
     text-align: start;
@@ -347,27 +372,34 @@ justify-content: center;
     font-size: 22px
 }
 
-/* MODAL */
-
-.openmodal {
-    font-size: 14px;
-    font-weight: 600;
-    padding: 15px 30px;
-    color: black;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    transition: 0.1s;
-    background: red;
-}
-.openmodal :hover {
-    background-color: red;
+#bakery p {
+    font-size: 24px; /* Adjust the size as needed */
+    font-weight: bold; /* Optional: Makes the text bold */
+    text-align: center; /* Optional: Centers the text */
+    margin-bottom: 20px; /* Adds spacing below the text */
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: inherit;
+#footer {
+    background-color: rgb(245,157,88,255); /* Light orange background */
+    color: white; /* White text */
+    padding: 20px 0; /* Vertical padding */
 }
-  
+
+#footer a {
+    color: white; /* White color for links */
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+#footer h5 {
+    margin-bottom: 15px; /* Space below headings */
+}
+
+#footer p {
+    margin: 0; /* Remove default margins */
+}
+
+
