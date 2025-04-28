@@ -402,4 +402,15 @@ a{
     margin: 0; /* Remove default margins */
 }
 
+.btn-warning {
+    background-color: rgb(109,30,53) !important; /* Sets the background color */
+    border-color: rgb(109,30,53) !important; /* Sets the border color */
+    color: white !important; /* Ensures the text is white for contrast */
+}
+
+.btn-warning:hover {
+    background-color: rgb(89,25,45) !important; /* Darker shade for hover effect */
+    border-color: rgb(89,25,45) !important; /* Matches the hover background */
+}
+
 
