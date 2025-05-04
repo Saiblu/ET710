@@ -12,7 +12,7 @@
         <div class="header_part">
           <nav id="header_left">
             <a href="#explore">Explore</a>
-            <a href="#shop">Recommendation</a>
+            <a href="#shop"></a>
           </nav>
           </div>
         </div>
@@ -48,7 +48,44 @@
         <a href="#bakery" class="btn btn-warning">Explore Our Products</a>
       </section>
 
+      <section id="carousel" class="my-5">
+        <div id="bakeryCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/bakery_stuff.jpg" class="d-block w-100" alt="Bakery Item 1">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Freshly Baked Goods</h5>
+                <p>Experience the taste of perfection.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/bakery_stuff2.jpg" class="d-block w-100" alt="Bakery Item 2">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Delicious Cakes</h5>
+                <p>Perfect for every occasion.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/bakery_stuff3.jpg" class="d-block w-100" alt="Bakery Item 3">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Sweet Treats</h5>
+                <p>Indulge in our handcrafted desserts.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#bakeryCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#bakeryCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
       <!--Products we have -->
+      
       <section id="bakery" class="section1">
         <p>Our Products</p>
         <div class="row">
@@ -299,6 +336,27 @@
           </div>
         </div>
       </section>
+
+      <section id="contact-form" class="my-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Contact Us</h2>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning">Submit</button>
+          </form>
+        </div>
+      </section>
             
       <footer id="footer" class="text-white text-center py-4">
         <div class="container">
@@ -307,13 +365,13 @@
             <div class="col-md-4">
               <h5>Follow Us</h5>
               <a href="https://facebook.com" target="_blank" class="text-white me-3">
-                <i class="bi bi-facebook"></i> Facebook
+                <img src="img/facebook.png" alt="Facebook Logo" style="width: 24px; height: 24px; margin-right: 8px;"> Facebook
               </a>
               <a href="https://twitter.com" target="_blank" class="text-white me-3">
-                <i class="bi bi-twitter"></i> Twitter
+                <img src="img/X.jpg" alt="Twitter Logo" style="width: 24px; height: 24px; margin-right: 8px;"> Twitter
               </a>
               <a href="https://instagram.com" target="_blank" class="text-white">
-                <i class="bi bi-instagram"></i> Instagram
+                <img src="img/instagram.png" alt="Instagram Logo" style="width: 24px; height: 24px; margin-right: 8px;"> Instagram
               </a>
             </div>
 

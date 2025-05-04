@@ -330,18 +330,28 @@ a{
     gap: 15px; /* Adds spacing between cards */
 }
 
+#bakery .row {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#bakery .col-md-3 {
+    padding-left: 3px; /* Reduces padding on the left */
+    padding-right: 3px; /* Reduces padding on the right */
+}
+
 #bakery .card {
     flex: 1 1 auto;
-    max-width: 28%; /* Adjust as needed */
+    max-width: 5%; /* Adjust as needed */
     min-width: 250px;
-    margin: 0; /* Removes unnecessary vertical margins */
-    padding: 10px 12px;
+    margin: 2px; /* Reduces the margin around each card */
+    padding: 10px;
     border: 0;
     border-radius: 25px;
     box-shadow: 20px 20px 30px rgb(8, 60, 0.2);
     background-color: white;
     transition: 0.2s ease-in;
-    margin: 15px;
 }
 #bakery .card {
     box-shadow: 20px 20px 30px rgb(0, 0, 0.4);
@@ -379,10 +389,21 @@ a{
     margin-bottom: 20px; /* Adds spacing below the text */
 }
 
+#bakeryCarousel img {
+    max-height: 400px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+    width: 100%; /* Ensures the image spans the full width of the carousel */
+}
+
 #footer {
-    background-color: rgb(245,157,88,255); /* Light orange background */
-    color: white; /* White text */
-    padding: 20px 0; /* Vertical padding */
+    text-align: left; /* Aligns the text to the left */
+    padding: 20px;
+    background-color: rgb(109, 30, 53); /* Optional: Keeps the footer background color */
+    color: white; /* Ensures the text remains readable */
+}
+
+#footer .row div {
+    text-align: left; /* Ensures each column's text is aligned to the left */
 }
 
 #footer a {
@@ -411,6 +432,37 @@ a{
 .btn-warning:hover {
     background-color: rgb(89,25,45) !important; /* Darker shade for hover effect */
     border-color: rgb(89,25,45) !important; /* Matches the hover background */
+}
+
+#contact-form {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form h2 {
+    color: rgb(109,30,53);
+}
+
+#contact-form .btn-warning {
+    background-color: rgb(109,30,53);
+    border-color: rgb(109,30,53);
+    color: white;
+}
+
+#contact-form .btn-warning:hover {
+    background-color: rgb(89,25,45);
+    border-color: rgb(89,25,45);
+}
+
+.transparent-logo {
+    opacity: 0.7; /* Makes the logo slightly transparent */
+    transition: opacity 0.3s ease; /* Adds a smooth transition effect */
+}
+
+.transparent-logo:hover {
+    opacity: 1; /* Restores full opacity on hover */
 }
 
 
